@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<div id="edit" contenteditable="true">
+original content
+</div>
+
+<input type="button" value="save" onclick="saveEdits()"/>
+
+<div id="update">
+	instructions
+</div>
+
+<script>
+function saveEdits() {
+	var editElement = document.getElementById('edit'),
+		userVersion = editElement.innerHTML;
+
+	localStorage.userEdits = userVersion;
+
+	document.getElementById('update').innerHTML = 'Saved!';
+}
+</script>
+
+</body>
+</html>
