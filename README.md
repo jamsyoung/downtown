@@ -1,5 +1,7 @@
 # downtown
 
+NOTE: This project is not currently in a working state yet.
+
 ## The local development environment (vagrant)
 This project utilized Vagrant to create a development enviornment on your computer.
 To get Vagrant installed, see the section at the bottom of this file titled "Getting
